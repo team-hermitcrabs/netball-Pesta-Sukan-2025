@@ -7,9 +7,6 @@ const SYNC_MESSAGE_ID_COLUMN = 12; // Column N for storing sync message
 
 // TARGET SHEET CONFIGURATION - Change this to switch sheets
 const TARGET_SHEET_NAME = 'Sheet1';
-/**x`
- * Get the target sheet by name
- */
 function getTargetSheet() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const sheet = spreadsheet.getSheetByName(TARGET_SHEET_NAME);
